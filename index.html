@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>עולם כלבים</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: right;
+            line-height: 1.6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .navbar button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .dog-breed {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .dog-breed img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+        .dog-breed-info {
+            flex-grow: 1;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .dog-toy {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .dog-toy img {
+            width: 100px;
+            height: 100px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <button onclick="showPage('home')">דף הבית</button>
+    <button onclick="showPage('dog-types')">סוגי כלבים</button>
+    <button onclick="showPage('dog-food')">אוכל לכלבים</button>
+    <button onclick="showPage('dog-toys')">צעצועים לכלבים</button>
+    <button onclick="showPage('contact')">צור קשר</button>
+</div>
+
+<div id="home" class="page active">
+    <h1>עולם כלבים</h1>
+    <img src="../כלב חמוד.jpg" height="683" width="1024"/>
+    <p>ברוכים הבאים לאתר עולם כלבים! כאן תמצאו מידע מקיף ומרתק על כלבים, מסוגי גזעים שונים ועד לטיפול והזנה מיטביים.</p>
+    <p>האתר שלנו מציע מידע מקצועי ומעניין לכל אוהבי הכלבים, מבעלי כלבים מנוסים ועד למתעניינים החדשים בעולם הכלבנות.</p>
+</div>
+
+<div id="dog-types" class="page">
+    <h1>סוגי כלבים</h1>
+    <div class="dog-breed">
+        <div class="dog-breed-info">
+            <h2>לברדור רטריבר</h2>
+            <p>תוחלת חיים: 10-12 שנים. כלב משפחתי נהדר, חכם ואוהב, מתאים מאוד לילדים. הלברדור ידוע באישיותו החברותית והסבלנית, והוא מהווה חבר נאמן למשפחה.</p>
+        </div>
+        <img src="../Dog1.jpg" height="1333" width="2000"/></div>
+
+    <div class="dog-breed">
+        <div class="dog-breed-info">
+            <h2>גרמני שפרד</h2>
+            <p>תוחלת חיים: 9-13 שנים. כלב שמירה מעולה, חכם ומסור, משמש גם בעבודות סיוע. הגרמני שפרד ידוע בכוחו, בינתו ובכישוריו המרשימים בתחומי שמירה, חיפוש והצלה.</p>
+        </div>
+        <img src="../Dog2.avif" height="1333" width="2000"/></div>
+
+    <div class="dog-breed">
+        <div class="dog-breed-info">
+            <h2>פודל</h2>
+            <p>תוחלת חיים: 12-15 שנים. כלב חכם מאוד, קל לאילוף ומתאים לאנשים עם אלרגיות. הפודל נחשב לאחד הגזעים החכמים ביותר, ומוכר ביכולת הלמידה המהירה שלו.</p>
+        </div>
+        <img src="../‏‏Dog3 - עותק.jpg" height="800" width="800"/></div>
+</div>
+
+<div id="dog-food" class="page">
+    <h1>אוכל לכלבים</h1>
+    <p>בחירת האוכל הנכון לכלב שלכם היא קריטית לבריאותו:</p>
+    <ul>
+        <li>
+            <h3>מזון יבש</h3>
+            <p>נוח לאחסון, מסייע בניקוי השיניים. מכיל רכיבים המספקים תזונה מאוזנת ומלאה.</p>
+        </li>
+        <li>
+            <h3>מזון רטוב</h3>
+            <p>עתיר בטעם ובנוזלים, מסייע בהידרציה ומתאים לכלבים עם בעיות לעיסה.</p>
+        </li>
+        <li>
+            <h3>מזון טבעי</h3>
+            <p>מורכב מרכיבים טריים וטבעיים, ללא חומרים משמרים וממותקים.</p>
+        </li>
+    </ul>
+    <p>חשוב להתאים את סוג המזון לגיל, גודל וצרכים הבריאותיים של הכלב.</p>
+</div>
+
+<div id="dog-toys" class="page">
+    <h1>צעצועים לכלבים</h1>
+    <div class="dog-toy">
+        <img src="../Toy1.jpg" height="1920" width="1920"/>
+        <div>
+            <h3>צעצועי לעיסה</h3>
+            <p>מסייעים בניקוי השיניים ומפחיתים חרדה. מומלצים במיוחד לכלבים צעירים.</p>
+        </div>
+    </div>
+
+    <div class="dog-toy">
+        <img src="../Toy2.jpg" height="500" width="500"/>
+        <div>
+            <h3>כדורים</h3>
+            <p>מעודדים משחק ותנועה, עוזרים לשמור על כושר פיזי ומנטלי.</p>
+        </div>
+    </div>
+
+    <div class="dog-toy">
+        <img src="../Toy3.png" height="703" width="890"/>
+        <div>
+            <h3>צעצועי משיכה</h3>
+            <p>מאפשרים משחק אינטראקטיבי עם הבעלים, מחזקים את הקשר בין כלב לבעליו.</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="page">
+    <h1>צור קשר</h1>
+    <form>
+        <label>שם מלא:</label>
+        <input type="text" name="name" required>
+
+        <label>אימייל:</label>
+        <input type="email" name="email" required>
+
+        <label>הודעה:</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">שלח</button>
+    </form>
+</div>
+
+<script>
+    function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+
+        // Show selected page
+        document.getElementById(pageId).classList.add('active');
+    }
+</script>
+</body>
+</html>
